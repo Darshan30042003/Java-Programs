@@ -1,0 +1,45 @@
+1.Swaping of two numbers with using the temp variable
+class Sample{
+    public static void main(String[] args){
+        int a=10;
+        int b=20;
+        int temp=a;
+            a=b;
+            b=temp;
+            System.out.println("a:"+a);
+            System.out.println("b:"+b);
+    }
+}
+o/p:a:20
+    b:10
+
+
+2.Swaping of two variables without the temp variable
+class Sample{
+    public static void main(String[] args){
+        int a=10;
+        int b=20;
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("a:"+a);
+        System.out.println("b:"+b);
+    }
+}
+o/p:a:20
+    b:10
+
+
+3.Reverse of a string
+class Sample{
+    public static void main(String[] args){
+        String str="java";
+        String res="";
+        for(int i=str.length()-1;i>=0;i--){
+            res=res+str.charAt(i);
+        }
+            System.out.println(res);
+        
+    }
+}
+o/p:avaj
