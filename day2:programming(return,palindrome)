@@ -1,0 +1,121 @@
+1.reverse of a string without using the charAt() method
+class Sample{
+    public static void main(String[] args){
+        String str="java";
+        char[] ch=str.toCharArray();
+        int i=0,j=ch.length-1;
+        while(i<j){
+            char temp=ch[i];
+                 ch[i]=ch[j];
+                 ch[j]=temp;
+                 i++;
+                 j--;
+        }
+        // System.out.println(ch); it is in type of char
+        str=new String(ch);//here we will get as string type
+        System.out.println(str);
+    }
+}
+o/p:avaj
+
+2.reverse of a string without using the charAt() method by passing parameter
+  class Sample{
+    public static void reversestring(String str){
+        
+        char[] ch=str.toCharArray();
+        int i=0,j=ch.length-1;
+        while(i<j){
+            char temp=ch[i];
+                 ch[i]=ch[j];
+                 ch[j]=temp;
+                 i++;
+                 j--;
+        }
+        // System.out.println(ch);
+        str=new String(ch);
+        System.out.println(str);
+    }
+    public static void main(String[] args){
+        reversestring("java");
+    }
+}
+o/p:avaj
+
+3.reverse of a string without using the charAt() method by return type
+  class Sample{
+    public static String reversestring(String str){
+        
+        char[] ch=str.toCharArray();
+        int i=0,j=ch.length-1;
+        while(i<j){
+            char temp=ch[i];
+                 ch[i]=ch[j];
+                 ch[j]=temp;
+                 i++;
+                 j--;
+        }
+        
+        str=new String(ch);
+        return str;
+    }
+    public static void main(String[] args){
+       
+        String x=reversestring("java");
+        
+        System.out.println(x);
+    }
+}
+
+o/p:avaj
+
+4.Palindrome
+  class Sample{
+    public static void main(String[] args){
+        String str="MOM";
+        String res="";
+        for(int i=str.length()-1;i>=0;i--){
+            res=res+str.charAt(i);
+        }
+        if(str.equals(res)){
+            System.out.println("palindrome");
+        }
+        else{
+            System.out.println("not a palindrome");
+        }
+    }
+}o/p:palindrome
+
+5.for the case LEvel
+  class Sample{
+    public static void main(String[] args){
+        String str="LEvel";
+        String res="";
+        for(int i=str.length()-1;i>=0;i--){
+            res=res+str.charAt(i);
+        }
+        if(str.equalsIgnoreCase(res)){
+            System.out.println("palindrome");
+        }
+        else{
+            System.out.println("not a palindrome");
+        }
+    }
+}o/p:palindrome
+
+6.palindrome without using the equals method
+  class Sample{
+    public static void main(String[] args){
+        String str="LEvel";
+        str = str.toLowerCase(); 
+        int i=0,j=str.length()-1;
+        while(i<j){
+            if(str.charAt(i)!=str.charAt(j)){
+                System.out.println("not a palindrome");
+                return;
+            }
+            i++;
+            j--;
+        }
+        System.out.println("palindrome");
+    }
+}o/p:palindrome
