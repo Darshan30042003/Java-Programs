@@ -1,0 +1,51 @@
+1.program to remove all numbers in a given string
+class Sample{
+    public static void main(String[] args){
+        String str="123met456ods789";
+        System.out.println(str.replaceAll("[0-9]",""));
+        (or)
+        System.out.println(str.replaceAll("[^a-zA-z]",""));
+    }
+}
+o/p:methods
+
+2.program to remove all charcters in a given string
+class Sample{
+    public static void main(String[] args){
+        String str="123met456ods789";
+        System.out.println(str.replaceAll("[^0-9]",""));
+        System.out.println(str.replaceAll("[a-zA-z]",""));
+    }
+}
+o/p:123456789
+
+3.program to reverse only vowels in given string
+class Sample{
+    public static void main(String[] args){
+        String str="Overloading";
+        String res="";
+        for(int i=str.length()-1;i>=0;i--){
+            res=res+str.charAt(i);
+        }
+        // System.out.println(res);
+        System.out.println(res.replaceAll("[^aeiouAEIOU]",""));
+    }
+}
+o/p:iaoeO
+
+
+4.program to reverse only consonants in given string
+class Sample{
+    public static void main(String[] args){
+        String str="Overloading";
+        String res="";
+        for(int i=str.length()-1;i>=0;i--){
+            res=res+str.charAt(i);
+        }
+        // System.out.println(res);
+        System.out.println(res.replaceAll("[aeiouAEIOU]",""));
+    }
+}
+o/p:gndlrv
+
+
