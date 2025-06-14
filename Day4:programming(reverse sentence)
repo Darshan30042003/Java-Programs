@@ -1,0 +1,47 @@
+1.write a program to count number of vowels and consonats in a given String
+ class Sample{
+    public static void main(String[] args){
+        String str="123met456ods789";
+        System.out.println(str.replaceAll("[^0-9]",""));
+        System.out.println(str.replaceAll("[^a-zA-z]","").length());
+    }
+}
+o/p:123456789
+    6
+
+
+2.write a program to reverse a given sentence
+class Sample{
+    public static void main(String[] args){
+       String str="hi how are you";
+       String[] s1=str.split(" ");
+       String result="";
+       for(int i=s1.length-1;i>=0;i--){
+           result=result+s1[i]+" ";
+       }
+       System.out.println(result.trim());
+    }
+}
+o/p:you are how hi
+
+
+3.write a program to reverse each word in a given sentence
+class ReverseEachWord {
+    public static void main(String[] args) {
+        String str = "hi how are you";
+        String[] words = str.split(" ");
+        String result = "";
+
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            String reversed = "";
+            for (int j = word.length() - 1; j >= 0; j--) {
+                reversed += word.charAt(j);
+            }
+            result += reversed + " ";
+        }
+
+        System.out.println(result.trim()); // Remove the last extra space
+    }
+}
+o/p:ih woh era uoy
