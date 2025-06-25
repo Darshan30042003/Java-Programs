@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Sample{
+    public static void main(String[] rags){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number");
+        int no=sc.nextInt();
+        findFact(no);
+    }
+    static void findFact(int no){
+        int a=1;
+        for(int i=no;i>0;i--){
+            a=a*i;
+        }
+       System.out.println(a); 
+    }
+}
+
+o/p:enter the number
+3
+6
