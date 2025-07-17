@@ -1,0 +1,12 @@
+package oops;
+import java.util.Random;
+class Mom {
+public static void main(String[] args) {
+Random rm=new Random();
+System.out.println("random numbers are");
+for(int i=1;i<=3;i++) {
+	System.out.print(rm.nextInt(6));
+}
+	
+}
+}
