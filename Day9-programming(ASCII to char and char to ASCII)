@@ -1,0 +1,32 @@
+package problems;
+import java.util.Scanner;
+
+public class Statements {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		 char a=sc.next().charAt(0);
+		int ascii=(int) a;
+		System.out.println(ascii);
+
+	}
+
+}
+
+
+package problems;
+import java.util.Scanner;
+
+public class Statements {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		int a=sc.nextInt();
+		char ascii=(char) a;
+		System.out.println(ascii);
+
+	}
+
+}
