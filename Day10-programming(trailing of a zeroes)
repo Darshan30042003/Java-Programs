@@ -1,0 +1,29 @@
+package problems;
+import java.util.Scanner;
+public class trailing_zero {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		int a=sc.nextInt();
+		int res=0;
+		int pov_of_5=5;
+		while(a>=pov_of_5) {
+			int b=a/pov_of_5;
+			res=res+b;
+			pov_of_5=pov_of_5*5;
+		}
+       System.out.println(res);
+	}
+
+}
+
+
+o/p:200
+    49
+
+    5
+    1
+
+    25
+    6
