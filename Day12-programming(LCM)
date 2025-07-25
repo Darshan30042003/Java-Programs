@@ -1,0 +1,62 @@
+Broute Approach-
+package problems;
+import java.util.Scanner;
+public class trailing_zero {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number1");
+		int a=sc.nextInt();
+		System.out.println("enter the number2");
+		int b=sc.nextInt();
+		int maxx=Math.max(a, b);
+		while(true) {
+			if(maxx%a==0 && maxx%b==0){
+				break;
+			}
+			maxx++;
+		}
+		System.out.println(maxx);
+	}
+
+}
+o/p-2 5
+    10
+
+    3 7
+    21
+
+
+
+
+2-unified approach
+trick- LCM(a,b)*GCD(a,b)=a*b
+
+package problems;
+import java.util.Scanner;
+public class trailing_zero {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number1");
+		int a=sc.nextInt();
+		System.out.println("enter the number2");
+		int b=sc.nextInt();
+		int min=0;
+        if(a<b) {
+        	min=a;
+        }
+        else {
+        	min=b;
+        }
+        for(int i=min;i>=1;i--) {
+        	if(a%i==0 &&  b%i==0) {
+        	System.out.println(i);
+        	int lcm=a*b/i;
+            System.out.println(lcm);
+        	break;
+        	}
+        	
+        }    
+	}
+}
