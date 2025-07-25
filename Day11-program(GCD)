@@ -1,0 +1,36 @@
+UNIFIED EUCLIDIAN APPORAOCH:-WE WILL USE THIS APPROACH BECAUSE IT WILL TAKE LESS TIME TO SOLVE SO WILL GO THROUGHT THIS SOLUTION AND ITS TIME COMPLEXITY IS=O(log(min(a,b))
+
+package problems;
+import java.util.Scanner;
+public class trailing_zero {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number1");
+		int a=sc.nextInt();
+		System.out.println("enter the number2");
+		int b=sc.nextInt();
+        while(a!=0 && b!=0) {
+        	if(a>b) {
+        		a=a%b;
+        	}
+        	else {
+        		b=b%a;
+        	}
+        	
+        }
+        if(a==0) {
+        	System.out.println(b);
+        }
+        else {
+        	System.out.println(a);
+        }
+	}
+
+}
+
+O/P 20 15
+    5
+
+    13 1
+    1
