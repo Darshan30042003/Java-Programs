@@ -1,0 +1,28 @@
+package problems;
+import java.util.Scanner;
+public class trailing_zero {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number1");
+		int a=sc.nextInt();
+		int i=2;
+		while(a>1) {
+			while(a%i==0) {
+				System.out.println(i);
+				a=a/i;
+			}
+			i++;
+		}
+	}
+}
+
+o/p-enter the number1
+900
+2
+2
+3
+3
+5
+5
+    
